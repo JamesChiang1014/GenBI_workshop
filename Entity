@@ -1,0 +1,11 @@
+YOY
+YOY是指本期與上期相比較的成長率，計算公式為：YOY =（本期數－上期數）/ 上期數 ×100%
+
+銷售額
+訂單單價*訂單數量，即unitPrice*quantity
+
+東部
+東部，在Region表中的regiondescriptition欄位中，維度值是Eastern
+
+Lara
+Lara在SalesOrder表中的shipRegion列，具體的維度值是Lara

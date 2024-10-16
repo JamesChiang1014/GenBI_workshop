@@ -70,3 +70,48 @@ CREATE TABLE Employee
   mgrId INTEGER ,
   photoPath VARCHAR
 )
+
+Supplier
+儲存供應商資訊
+CREATE TABLE Supplier
+ (
+  supplierId INTEGER COMMENT '供應商ID',
+  companyName VARCHAR COMMENT '公司名稱，外鍵跟Shipper中的companyName關聯',
+  contactName VARCHAR COMMENT '公司名稱',
+  contactTitle VARCHAR COMMENT '公司名稱',
+  address VARCHAR ,
+  city VARCHAR ,
+  region VARCHAR ,
+  postalCode VARCHAR ,
+  country VARCHAR ,
+  phone VARCHAR ,
+  email VARCHAR ,
+  fax VARCHAR ,
+  HomePage TEXT
+)
+
+Product
+儲存產品資訊
+CREATE TABLE Employee
+ (
+  employeeId INTEGER COMMENT '員工ID，外鍵和SalesOrder表中的employeeId關聯',
+  lastname VARCHAR ,
+  firstname VARCHAR ,
+  title VARCHAR COMMENT '職位',
+  titleOfCourtesy VARCHAR ,
+  birthDate DATETIME COMMENT '出生日期',
+  hireDate DATETIME COMMENT '僱用日期',
+  address VARCHAR COMMENT '地址',
+  city VARCHAR COMMENT '城市',
+  region VARCHAR COMMENT '地區',
+  postalCode VARCHAR COMMENT '郵遞區號',
+  country VARCHAR ,
+  phone VARCHAR ,
+  extension VARCHAR ,
+  mobile VARCHAR ,
+  email VARCHAR ,
+  photo BLOB ,
+  notes BLOB ,
+  mgrId INTEGER ,
+  photoPath VARCHAR
+)

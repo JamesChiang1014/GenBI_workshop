@@ -16,6 +16,7 @@
 + OrderDetail：訂單詳情表，訂單存儲中每個產品的詳細信息，並與 SalesOrder 和 Product 表關聯
 
 資料集的ER圖如下：
+![image](images/ER.png)
 
 
 

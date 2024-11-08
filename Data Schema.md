@@ -178,6 +178,19 @@ CREATE TABLE SalesOrder
 
 ![image](images/SalesOrder.png)
 
+OrderDetail資料細節
+
+CREATE TABLE OrderDetail
+ (
+  orderDetailId INTEGER COMMENT '訂單詳情ID' ,
+  orderId INTEGER COMMENT '訂單ID，外鍵，跟SalesOrder中的orderId關聯',
+  productId INTEGER '產品ID，外鍵，跟Product中的productId關聯',
+  unitPrice DECIMAL ,
+  quantity SMALLINT ,
+  discount DECIMAL COMMENT '折扣'
+)
+
+![image](images/OrderDetail.png)
 
 
 

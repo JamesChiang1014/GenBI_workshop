@@ -51,6 +51,7 @@ CREATE TABLE Territory
 ![image](images/Territory.png)
 
 Customer資料細節:
+
 CREATE TABLE Customer
  (
   custId INTEGER COMMENT '客戶ID',
@@ -69,7 +70,32 @@ CREATE TABLE Customer
 )
 ![image](images/Customer.png)
 
+Employee資料細節:
+CREATE TABLE Employee
+(
+  employeeId INTEGER COMMENT '員工ID，外鍵和SalesOrder表中的employeeId關聯',
+  lastname VARCHAR ,
+  firstname VARCHAR ,
+  title VARCHAR COMMENT '職位',
+  titleOfCourtesy VARCHAR ,
+  birthDate DATETIME COMMENT '出生日期',
+  hireDate DATETIME COMMENT '僱用日期',
+  address VARCHAR COMMENT '地址',
+  city VARCHAR COMMENT '城市',
+  region VARCHAR COMMENT '地區',
+  postalCode VARCHAR COMMENT '郵遞區號',
+  country VARCHAR ,
+  phone VARCHAR ,
+  extension VARCHAR ,
+  mobile VARCHAR ,
+  email VARCHAR ,
+  photo BLOB ,
+  notes BLOB ,
+  mgrId INTEGER ,
+  photoPath VARCHAR
+)
 
+![image](images/Employee.png)
 
 
 

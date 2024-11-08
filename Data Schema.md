@@ -18,6 +18,17 @@
 資料集的ER圖如下：
 ![image](images/ER.png)
 
+Category資料細節:
+CREATE TABLE Category
+ (
+  categoryId INTEGER COMMENT '類別ID' ,
+  categoryName VARCHAR COMMENT '類別名稱' ,
+  description TEXT COMMENT '類別描述' ,
+  picture BLOB
+)
+
+![image](images/Category.png)
+
 
 
 

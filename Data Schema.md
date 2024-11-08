@@ -128,6 +128,25 @@ CREATE TABLE Supplier
 
 ![image](images/Supplier.png)
 
+Product資料細節
+
+CREATE TABLE Product
+ (
+  productId INTEGER COMMENT '產品ID',
+  productName VARCHAR COMMENT ' 產品名稱',
+  supplierId INTEGER COMMENT '供應商ID，外鍵，跟Supplier中的supplierId關聯',
+  categoryId INTEGER COMMENT '外鍵，跟Category中的categoryId關聯',
+  quantityPerUnit VARCHAR ,
+  unitPrice DECIMAL ,
+  unitsInStock SMALLINT ，
+  unitsOnOrder SMALLINT ,
+  reorderLevel SMALLINT ,
+  discontinued CHAR COMMENT '是否停產，1 表示產品已停產，0表示產品未停產'
+)
+
+![image](images/Product.png)
+
+
 
 
 

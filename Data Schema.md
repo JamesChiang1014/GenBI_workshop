@@ -97,6 +97,17 @@ CREATE TABLE Employee
 
 ![image](images/Employee.png)
 
+EmployeeTerritory資料細節:
+
+CREATE TABLE EmployeeTerritory
+ (
+  employeeId INTEGER COMMENT '外鍵，跟Employee表中的employeeId關聯',
+  territoryId VARCHAR COMMENT '外鍵，跟Territory表中的territoryId關聯'
+)
+
+![image](images/EmployeeTerritory.png)
+
+
 
 
 

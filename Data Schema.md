@@ -107,6 +107,27 @@ CREATE TABLE EmployeeTerritory
 
 ![image](images/EmployeeTerritory.png)
 
+Supplier資料細節
+
+CREATE TABLE Supplier
+ (
+  supplierId INTEGER COMMENT '供應商ID',
+  companyName VARCHAR COMMENT '公司名稱，外鍵跟Shipper中的companyName關聯',
+  contactName VARCHAR COMMENT '公司名稱',
+  contactTitle VARCHAR COMMENT '公司名稱',
+  address VARCHAR ,
+  city VARCHAR ,
+  region VARCHAR ,
+  postalCode VARCHAR ,
+  country VARCHAR ,
+  phone VARCHAR ,
+  email VARCHAR ,
+  fax VARCHAR ,
+  HomePage TEXT
+)
+
+![image](images/Supplier.png)
+
 
 
 

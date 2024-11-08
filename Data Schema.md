@@ -40,6 +40,16 @@ CREATE TABLE Region
 
 ![image](images/Region.png)
 
+Territory資料細節:
+
+CREATE TABLE Territory
+ (
+  territoryId VARCHAR COMMENT '銷售區域ID',
+  territorydescription VARCHAR COMMENT '銷售區域說明',
+  regionId INTEGER COMMENT '所屬地區ID'
+)
+![image](images/Territory.png)
+
 
 
 

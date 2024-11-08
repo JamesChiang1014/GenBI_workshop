@@ -1,4 +1,4 @@
-我們這裡採用的是Northwind資料集，Northwind資料集是一個廣泛使用的樣本資料庫，通常用於教學、練習和展示SQL查詢、資料庫設計和其他資料管理技巧。 ） Traders）的營運數據，主要涉及產品、客戶、訂單、供應商等方面。
+<img width="1033" alt="image" src="https://github.com/user-attachments/assets/67feeadf-8281-4631-b2cb-4a21ba738065">我們這裡採用的是Northwind資料集，Northwind資料集是一個廣泛使用的樣本資料庫，通常用於教學、練習和展示SQL查詢、資料庫設計和其他資料管理技巧。 ） Traders）的營運數據，主要涉及產品、客戶、訂單、供應商等方面。
 
 主要包含以下表數據
 + Category：類別表，儲存產品類別的詳細信息
@@ -145,6 +145,44 @@ CREATE TABLE Product
 )
 
 ![image](images/Product.png)
+
+Shipper資料細節
+
+CREATE TABLE Shipper
+ (
+  shipperId INTEGER COMMENT '運輸公司ID',
+  companyName VARCHAR COMMENT '公司名稱',
+  phone VARCHAR
+)
+![image](images/Shipper.png)
+
+SalesOrder資料細節
+
+CREATE TABLE SalesOrder
+ (
+  orderId INTEGER COMMENT '訂單編號',
+  custId INTEGER COMMENT '客戶編號，外鍵，跟 Customer中的custId關聯',
+  employeeId INTEGER COMMENT '員工編號，外鍵，跟 Employee中的custId關聯',
+  orderDate DATETIME COMMENT '訂購日期，日期格式yyyy-mm-dd，範例數據，2006-01-01',
+  requiredDate DATETIME COMMENT '預計到達日期，日期格式yyyy-mm-dd，範例數據，2006-01-01',
+  shippedDate DATETIME COMMENT '出貨日期，日期格式yyyy-mm-dd，範例數據，2006-01-01',
+  shipperid INTEGER COMMENT '運貨商，外鍵，跟 Shipper中的shipperid關聯',
+  freight DECIMAL COMMENT '運費',
+  shipName VARCHAR COMMENT '貨主姓名',
+  shipAddress VARCHAR COMMENT '貨主地址',
+  shipCity VARCHAR COMMENT '貨主所在城市',
+  shipRegion VARCHAR COMMENT '貨主所在地區',
+  shipPostalCode VARCHAR COMMENT '貨主郵遞區號',
+  shipCountry VARCHAR COMMENT '貨主所在國'
+)
+
+![image](images/SalesOrder.png)
+
+
+
+
+
+
 
 
 

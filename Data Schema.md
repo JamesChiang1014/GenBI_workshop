@@ -19,6 +19,7 @@
 ![image](images/ER.png)
 
 Category資料細節:
+
 CREATE TABLE Category
  (
   categoryId INTEGER COMMENT '類別ID' ,
@@ -28,6 +29,18 @@ CREATE TABLE Category
 )
 
 ![image](images/Category.png)
+
+Region資料細節:
+
+CREATE TABLE Region
+ (
+  regionId INTEGER COMMENT '地區ID',
+  regiondescription VARCHAR COMMENT '地區描述'
+)
+
+![image](images/Region.png)
+
+
 
 
 

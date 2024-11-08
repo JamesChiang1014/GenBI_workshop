@@ -50,6 +50,25 @@ CREATE TABLE Territory
 )
 ![image](images/Territory.png)
 
+Customer資料細節:
+CREATE TABLE Customer
+ (
+  custId INTEGER COMMENT '客戶ID',
+  companyName VARCHAR COMMENT '公司名稱',
+  contactName VARCHAR COMMENT '聯絡人姓名',
+  contactTitle VARCHAR COMMENT '聯絡人職位',
+  address VARCHAR COMMENT '地址',
+  city VARCHAR COMMENT '城市',
+  region VARCHAR COMMENT '地區',
+  postalCode VARCHAR COMMENT '郵遞區號',
+  country VARCHAR COMMENT '國',
+  phone VARCHAR COMMENT '電話',
+  mobile VARCHAR COMMENT '手機號碼',
+  email VARCHAR COMMENT '電子郵件',
+  fax VARCHAR COMMENT '傳真'
+)
+![image](images/Customer.png)
+
 
 
 
